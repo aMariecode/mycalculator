@@ -1,38 +1,102 @@
+body {
+  background-color: whitesmoke;
+  background-image: url('https://tse3.mm.bing.net/th?id=OIP.6GlLuZAjM7wQK92GqKTnlAHaFf&pid=Api&P=0&h=180'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 72px;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  z-index: 1; 
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  color: white !; /* Change the text color to white */
+  font-size: 1.65rem;
+  margin: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Calc {
+  background-color: #C5C9D2;
+  border: 1rem solid #313751;
+  border-radius: 1.2rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 20px;
+  width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.Disp {
+  background-color: #74796B;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  height: 50px;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.Buttons {
+  background-color: #C5C9D2;
+  display: grid;
+  font-size: 2rem;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.Buttons > button {
+  background-color: whitesmoke;
+  border-radius: 50px; /* Oval shape */
+  font-size: 1em;
+  padding: 10px;
+}
+
+.Buttons > button:hover {
+  background-color: rgb(173, 170, 170);
+}
+
+.Operators {
+  background-color: #505863 !important;
+  color: whitesmoke !important;
+}
+
+.Operators:hover {
+  background-color: #353a41 !important;
+  color: whitesmoke !important;
+}
+
+.Clear {
+  background-color: blue !important;
+}
+
+.Clear:hover {
+  background-color: blue !important;
+}
+
+.nameButton > button {
+  background-color: #505863;
+  border-radius: 50px; 
+  color: whitesmoke;
+  font-size: 2rem;
+  height: 50px;
+  width: 500px;
+}
+
+.nameButton > button:hover {
+  background-color: #353a41 !important;
+  color: whitesmoke !important;
+  border-radius: 30px;
+  font-size: 2rem;
 }
