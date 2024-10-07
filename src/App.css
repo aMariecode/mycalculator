@@ -6,6 +6,7 @@ body {
   background-position: center;
   margin: 72px;
   padding: 0;
+  color: white;
 }
 
 .App {
@@ -18,7 +19,7 @@ body {
 }
 
 .Header {
-  color: white !; /* Change the text color to white */
+  color: white !;
   font-size: 1.65rem;
   margin: 1.5rem;
 }
@@ -58,7 +59,7 @@ body {
 
 .Buttons > button {
   background-color: whitesmoke;
-  border-radius: 50px; /* Oval shape */
+  border-radius: 50px; 
   font-size: 1em;
   padding: 10px;
 }
